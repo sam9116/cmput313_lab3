@@ -1,0 +1,93 @@
+
+compile	= "lab3.c"
+
+propagationdelay =  100ms
+messagerate	 = 1000ms
+
+
+host perth {
+    x=250, y=750
+	address = 100
+	link to perth_r_Edmonton
+	link to Calgary
+}
+
+host melbourne {
+    x=250, y=700
+	address = 101
+	link to Edmonton
+	link to Calgary    
+}
+
+host sydney {
+    x=250, y=650
+	address = 102
+	link to sydney_r_Edmonton
+	link to Calgary
+	link to sydney_r_Red_Deer
+	link to Lethbridge
+	link to Medicine_Hat
+}
+
+host brisbane {
+    x=250, y=600
+	address = 103
+	link to Red_Deer
+	link to Lethbridge
+	link to brisbane_r_Medicine_Hat	
+
+}
+
+router perth_r_Edmonton {
+    x=500, y=750
+	address = 200
+	link to Edmonton
+	
+
+}
+
+router sydney_r_Edmonton {
+    x=500, y=700
+	address = 201
+	link to Edmonton
+}
+
+router sydney_r_Red_Deer {
+    x=500, y=650
+	address = 203
+	link to Red_Deer
+}
+
+
+router brisbane_r_Medicine_Hat {
+    x=500, y=600
+	address = 215
+	link to Medicine_Hat
+
+}
+
+
+
+
+host Edmonton {
+    x=750, y=550
+	address = 310
+
+}
+host Calgary {
+    x=750, y=700
+	address = 315
+}
+host Red_Deer {
+    x=750, y=650
+	address = 318
+
+}
+host Lethbridge {
+	x=750, y=600
+	address = 305
+}
+host Medicine_hat {
+	x=750, y=550  
+	address 308
+}

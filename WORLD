@@ -1,0 +1,7 @@
+
+compile	= "lab2.c"
+
+propagationdelay =  100ms
+messagerate	 = 1000ms
+
+#include "WORLD.MAP"
